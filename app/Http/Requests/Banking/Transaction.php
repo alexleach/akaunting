@@ -25,7 +25,7 @@ class Transaction extends FormRequest
 
             $id = is_numeric($this->$model) ? $this->$model : $this->{$model}->getAttribute('id');
         } else {
-            $id = null;
+            $id = 0;
         }
 
         // Get company id

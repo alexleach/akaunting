@@ -49,7 +49,7 @@ class User extends FormRequest
             }
         } else {
             // Creating user
-            $id = null;
+            $id = 0;
             $companies = 'required';
             $roles = 'required|string';
         }
